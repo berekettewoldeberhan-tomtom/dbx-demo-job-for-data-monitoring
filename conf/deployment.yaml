@@ -4,3 +4,6 @@ environments:
       - name: "dbx-demo-job"
         spark_python_task:
           python_file: "dbx-demo-job.py"
+      - name: "sample-file-listing-job"
+        spark_python_task:
+          python_file: "sample_file_listing_job.py"    

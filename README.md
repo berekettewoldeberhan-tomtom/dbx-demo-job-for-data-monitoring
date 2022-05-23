@@ -12,5 +12,13 @@ SparkLoggingEvent_CL
 | search "(sample Python job prepared for Azure monitor)"
 </pre>  
 
+or
+
+<pre>
+SparkLoggingEvent_CL
+| where logger_name_s == "dbx-demo_logger" 
+| project TimeGenerated, Message
+</pre>
+
 You can find more examples on how to query AZ Monitor by following the link below:  
 https://docs.microsoft.com/en-us/azure/azure-monitor/logs/basic-logs-query?tabs=portal-1
